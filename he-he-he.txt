@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+#include <map>
+using namespace std;
+int main()
+{
+	string s;
+	int a,b,n;
+	getline(cin,s);
+	map<char, int>ma,mp;
+	a=s.size();
+	for (int i=0; i<a-1; i++)
+	{
+		if(s[i]==' ')
+		{
+			continue;
+		}
+		mp[s[i]]++;
+	}
+	  for(char i=0;i<s.size()-1;i++)
+    {
+    	if(mp[s[i]]!=0)
+    	{
+    		cout<<mp[s[i]]<<" "<<s[i]<<" \n";	
+		}
+    	mp[s[i]]=0;
+    }
+	
+	
+}

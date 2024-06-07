@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    long long a, b, c, d, e, f, g, h, i=0, j=0;
+    cin >>a;
+    if (a%2==0)
+    {
+        cout << a/2;    
+    }
+    else if (a%2==1)
+    {
+        cout <<a ;
+    }
+}

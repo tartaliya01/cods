@@ -1,0 +1,22 @@
+#include<iostream>
+#include<map>
+using namespace std;
+int main()
+{
+	int a;
+	cin >>a;
+	for (int i=0; i<=a; i++)
+	cout << ""<<" ";
+	if (a>18)
+	{
+		cout <<"pasport mumkin";
+	}
+	else if (a<=0)
+	{
+		cout <<"paricha ASALCHA MAYDA CHA";
+	}
+	else if (a<18)
+	{
+		cout <<"paspart mumkin ne pashol na tri vislix bukvi";
+	}
+}

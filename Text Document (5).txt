@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a, j;
+	cin >>a;
+	if (4<=a && a%2==0)
+	{
+		cout <<"YES";
+	}
+	else  
+	{
+		cout <<"NO";
+	}
+}

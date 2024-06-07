@@ -1,0 +1,60 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	cout <<"MENYU;"<<endl;
+	cout <<"Funksiyalar;"<<endl<<endl;
+	cout <<"Kredit olish"<<"          "<<"Kridit tolash"<<endl<<endl;
+	cout <<"banka pul qoyish"<<"      "<<"bankdagi pulni olish"<<endl<<endl;
+	cout <<"plastik karta yasash"<<endl;
+	cout <<"______________________________________________________"<<endl;
+	cout << "Nechta ish qilmoqchi siz?"<<endl;
+	int x;
+	cin >>x;
+	for (int i=0; i<=x; i++)
+	{
+		string s;
+		int  k,w,l,o=0;
+		getline(cin,s);
+		if (s=="Kredit olish")
+		{
+			int y=0;
+			o=1;
+			cout <<"____________________________"<<endl;
+			cout <<"Qancha Kredit olmoqchi siz"<<endl;
+			cin >>y;
+			cout <<"nechi oyga olmoqchi siz"<<endl;
+			cin >>k;
+			cout <<"Bir oyga"<<" "<<y/k<<"."<<y%k<<" "<<"sum berasiz"<<endl;
+		}
+		if (s=="Kridit tolash")
+		{
+			if (y==0)
+			{
+				cout <<"Sizni tabrik layman Sizda kredit yok!"<<endl;
+			}
+			
+			else if (y!=0)  
+			{
+				string st;
+				cout <<"Bir oyga"<<y/k<<"."<<y%k<<"Berasiz"<<endl;
+				cout <<"Agar bir oylig bremaqchi bolsangiz Ha deying"<<endl;
+				cin >>st;
+				if (st=="Ha")
+				{
+					w=y-(y/k);
+					}
+				else 
+				{
+					cout <<"Qancha bremoqchi siz"<<endl;
+					cin >>l;
+						w=y-l;
+				}
+				cout <<"Siz yan"<<" "<<w<<" "<<"Som berishins kerak"<<endl;
+			}
+		}
+	}
+	
+	
+}

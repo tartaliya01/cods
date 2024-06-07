@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int rek (int x, int y, int z)
+{
+	if (x==0) return z;
+	z=z+y;
+	rek (x-1,y+1,z);
+}
+int main()
+{
+	int a, b=0, v;
+	cin >>a;
+	v=rek (a, 1, b);
+	cout <<v;
+}
